@@ -94,13 +94,13 @@ export default function GenrePage() {
         }
         if (error) {
             setTimeout(() => {
-                navigate('/MovieflixV2/');
+                navigate('/Movieflix-react-v2/');
             }, 3000);
         }
     }, [id, data, error, pageNumber, navigate, count]);
 
     const handleOnClick = (info) => {
-        navigate(`/MovieflixV2/movie/${info}`);
+        navigate(`/Movieflix-react-v2/movie/${info}`);
     };
 
     return (
